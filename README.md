@@ -6,43 +6,43 @@ The objective of this analysis is to explore datasets that provide insights into
 ## Overview
 
 **Project Name**: Cooking and Ordering Trends: A Comprehensive User Behavior Analysis  
-**Tools and Technologies:**
+ **Tools and Technologies:**
 
-**Programming Languages:**
+**1. Programming Languages:**
 
-**Python-** For data cleaning, merging, analysis, and visualization.
+- **Python-** For data cleaning, merging, analysis, and visualization.
 
-- **Data Analysis Libraries:**
+**2. Data Analysis Libraries:**
 
-**Pandas-** For data manipulation, merging datasets, and generating insights.
+   - **Pandas-** For data manipulation, merging datasets, and generating insights.
 
-**NumPy-** For numerical computations.
+   - **NumPy-** For numerical computations.
 
-- **Data Visualization Libraries:**
+ **3. Data Visualization Libraries:**
 
-  **Matplotlib-** For creating line plots, bar charts, and pie charts to visualize trends and distributions.
+  - **Matplotlib-** For creating line plots, bar charts, and pie charts to visualize trends and distributions.
 
-  **Seaborn-** For advanced data visualizations, including heatmaps and categorical plots.
+  - **Seaborn-** For advanced data visualizations, including heatmaps and categorical plots.
 
-- **IDE/Platform:**
+**4. IDE/Platform:**
 
-  **Jupyter Notebook-** For interactive programming and visualization during the analysis.
+  - **Jupyter Notebook-** For interactive programming and visualization during the analysis.
 
-- **Version Control:**
+**5. Version Control:**
 
-**Git and GitHub-** For managing project versions and uploading the Jupyter Notebook for collaboration and sharing.
+- **Git and GitHub-** For managing project versions and uploading the Jupyter Notebook for collaboration and sharing.
 
-- **Data Formats:**
+**6. Data Formats:**
 
-**CSV Files-** As the primary format for storing user details, cooking sessions, and order details.
+- **CSV Files-** As the primary format for storing user details, cooking sessions, and order details.
 
-- **Statistical Techniques:**
+**7. Statistical Techniques:**
 
-**Correlation Analysis-** To find relationships between cooking sessions and orders.
+- **Correlation Analysis-** To find relationships between cooking sessions and orders.
 
-**Descriptive Statistics-** To summarize numerical data, like average session duration and order frequency.
+- **Descriptive Statistics-** To summarize numerical data, like average session duration and order frequency.
 
-**Data Sources:**
+#### **Data Sources:**
 The data analyzed in this report was obtained from the culinary app platform during the period of January 2023 to December 2023. 
 
 **User Data:** Demographic details such as age, gender, and location.
@@ -203,97 +203,34 @@ Younger Users (18-25 years): Focus on fast, trendy meals and offer social sharin
 
 **Example:** "Snap Your Dish and Get 5% Off Your Next Order!"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Objectives
-
-- Analyze and organize cooking recipes
-- Provide easy-to-follow instructions, ingredients, and cooking times
-- Use Unsupervised Machine Learning techniques (e.g., Clustering)
-- Develop interactive visualizations using Looker Studio
-
 ## Highlights
 
 - **Data Collection and Cleaning**: Efficiently collected and cleaned the dataset to ensure accuracy.
 - **Feature Engineering**: Extracted relevant features from the dataset for better analysis.
-- **Machine Learning Models**: Implemented clustering algorithms to categorize recipes.
-- **Interactive Dashboards**: Created user-friendly dashboards using Looker Studio for easy data visualization.
-
-## Challenges
-
-- Handling missing values and inconsistencies in the dataset.
-- Ensuring the machine learning models accurately categorize recipes.
-- Developing interactive and intuitive visualizations.
+- **Data Visualization:** Created insightful and user-friendly visualizations using tools like Matplotlib and Seaborn for easy data interpretation.
 
 ## Folder Structure
 
 ```plaintext
-Cook-Me-Up/
+Cooking and Ordering Trends/
 │
 ├── data/
 │   ├── raw/
-│   │   └── indian_food.csv        # Original CSV file from Kaggle API Call
-│   ├── processed/
-│   │   └── cleaned_data.csv       # CSV file as a Result of Data Cleaning
-│   └── BigQuery/
-│       └── bigquery_output.csv    # CSV file as a Result of BigQuery SQL
+│   │   └── cooking_orders_dateset.xlsx        # dataset used
 │
 ├── notebooks/
-│   ├── data_cleaning.py           # Documents the data cleaning process
-│   ├── data_exploration.py        # Level 1 dataset EDA Python libraries Pandas, Numpy, Matplotlib, Seaborn
-│   └── data_visualization.py      # Level 2 dataset EDA Seaborn, machine learning (Clustering etc.), input to Looker Studio
+│   ├── cooking_analysis.ipynb           # Documents the data cleaning process Python libraries Pandas, Numpy, Matplotlib, Seaborn
 │
-├── scripts/ 
-│   ├── bigquery_eda.sql           # SQL script for initial exploratory data analysis using BigQuery
-│   ├── bigquery_analysis.sql      # SQL script for more in-depth analysis, meaningful insights using BigQuery
-│   └── visualization.sql          # SQL script for generating visualizations and input to Looker Studio
-│
-├── reports/
-│   ├── EDA_report.md              # Markdown file documenting the exploratory data analysis
-│   ├── results.md                 # Markdown file documenting the results of the analysis
-│   └── final_presentation         # Folder containing the final presentation materials
-│
-├── streamlit/                     # Streamlit app files (through a side branch: streamlit_deployment)
-│   ├── streamlit_app.py           # application script
-│   └── indian_food.csv            # raw CSV file for Streamlit app
+├── visuals/
+│   ├── popular_barchart                 # bar chart for popular dish
+│   ├── user distribution by loc         # pie chart for location       
+│   ├── user distribution by fav meal    # pie chart for favorite meal
+│   ├── age distribution of users        # bar chart for age distribution
+│   ├── total orders                     # stacked bar chart for total orders
+│   └── orders over time                 # line chart for orders over time
 │
 ├── README.md
-├── INSTRUCTIONS.md
-├── LICENSE
 
 
 
-```
-### Prerequisites
 
-- Python 3.x
-- BigQuery account
-- Looker Studio account
-
-### License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-### Acknowledgments
-- [WBS Coding School](https://github.com/WBSCodingSchool) for the support and guidance.
-- Kaggle for providing the dataset.
-- All contributors to this project.  
